@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  align-items: stretch;
+}
+
+.column {
+  background: goldenrod;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.button {
+  border: none;
+  background-color: rgb(59, 47, 47);
+  color: white;
+  padding: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: whitesmoke;
+  color: #222;
+}
