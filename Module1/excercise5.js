@@ -1,8 +1,10 @@
 let fiveElements = ["Earth", "Water", "Fire", "Air", "Space"];
 
-// replacing index 1 and index 4
-fiveElements[1] = "Space";
-fiveElements[4] = "Water";
+// replacing element of position 1 and 4
+fiveElements[1] = "Watebender";
+fiveElements[4] = "Airbender";
+
+console.log(fiveElements);
 
 //adding new element to the begining
 fiveElements.unshift("Ether");
