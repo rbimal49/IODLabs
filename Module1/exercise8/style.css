@@ -64,13 +64,13 @@ input {
 }
 
 .button:active {
-  box-shadow: #012b35;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  box-shadow: 0 5px #014250;
+  transform: translateY(2px);
 }
 
 /* Styling Dice */
-#cube {
+.diceStyle {
+  display: none;
   width: 100px;
   height: 100px;
   padding: 20px;
