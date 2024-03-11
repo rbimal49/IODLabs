@@ -1,0 +1,19 @@
+*******User Sotry*******
+
+As a user, I want to be able to choose between a six-sided or ten-sided dice, so I can use the appropriate dice for my game or activity.
+
+
+
+*********Storyboard**************
+Storyboard showing a user using the dice generator with the option to choose between six-sided or ten-sided dice:
+
+Step 1: User opens the dice generator landing page.
+Step 2: User sees the option to choose between a six-sided or ten-sided dice.
+Step 3: User selects the six-sided dice option.
+Step 4: User clicks on the "Roll Dice" button.
+Step 5: The dice animation rolls and lands on a random number between 1 and 6.
+Step 6: User sees the result of the roll displayed on the screen.
+Step 7: User decides to roll again and clicks the "Roll" button.
+Step 8: The dice animation rolls again and lands on another random number between 1 and 6.
+Step 9: User repeats the rolling process a few times, enjoying the simplicity and ease of use of the dice generator.
+Step 10: User closes the dice generator after finishing their dice rolling activity.
