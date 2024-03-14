@@ -1,7 +1,22 @@
-// // Function that generates a random number from user's input
+// Function that generates a random number from user's input
 function rollDice() {
-  const numberSelection = parseInt(document.getElementById("userInput").value); // Variable numberSelection will get the users's iput from HTML element with the id "userinput"
-  return Math.round(Math.random() * numberSelection); //Generates the random number between 0 and numberSelection, rounds to the nearest integer
+  // empty variable declared
+  let numberSelection;
+
+  // Variable declared to store the selection made by user
+  const sixRadio = document.getElementById("sixRadio");
+  const tenRadio = document.getElementById("tenRadio");
+
+  // assigning the value of variable sixRadio and tenRadio based on user's choice
+  if (sixRadio.checked) {
+    numberSelection = 6;
+  }
+  if (tenRadio.checked) {
+    numberSelection = 10;
+  }
+
+  //Generates the random number between 0 and numberSelection, rounds to the nearest integer
+  return Math.round(Math.random() * numberSelection);
 }
 
 // Function that updates the HTML element with id "cube"
@@ -10,6 +25,3 @@ function updateValue() {
   document.getElementById("cube").innerHTML = rollDice();
   document.getElementById("cube").style.display = "block";
 }
-
-//unit testing by printing in console
-// console.log(updateValue(6));

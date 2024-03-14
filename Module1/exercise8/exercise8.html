@@ -10,10 +10,28 @@
     <section>
       <h1>Dice Generator</h1>
       <form action="">
+        <p class="numSelect">Select the number of faces for the dice::</p>
         <div class="options">
-          <label for="face">Enter number of faces:</label>
-          <input id="userInput" type="text" />
+          <div class="radioStyle">
+            <input
+              type="radio"
+              id="sixRadio"
+              name="dice_faces"
+              value="Six_faces"
+            />
+            <label for="six">6 Faces Dice</label>
+          </div>
+          <div class="radioStyle">
+            <input
+              type="radio"
+              id="tenRadio"
+              name="dice_faces"
+              value="Ten_faces"
+            />
+            <label for="ten">Ten Faces Dice</label>
+          </div>
         </div>
+
         <p id="cube" class="diceStyle"></p>
         <button type="button" class="button" onclick="updateValue()">
           Roll Dice

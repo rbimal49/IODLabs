@@ -3,9 +3,13 @@
   margin: auto;
   background-color: #f1f1f1;
   font-family: sans-serif;
-  text-align: center;
-  font-size: 50px;
+  font-size: 40px;
 }
+
+section {
+  text-align: center;
+}
+
 /* Styiling the the title */
 h1 {
   background-color: #019b98;
@@ -21,11 +25,16 @@ form {
   padding: 50px;
   width: 60%;
   margin: auto;
-  background-color: white;
+  background-color: #fbfbfb;
   border-radius: 0px 0px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.numSelect {
+  font-weight: bold;
 }
 
 /* userInput div styling */
@@ -33,20 +42,27 @@ form {
   display: flex;
   justify-content: space-evenly;
   gap: 10px;
-  background-color: white;
   margin-bottom: 15px;
+  background-color: #fbfbfb;
 }
 
+.radioStyle {
+  display: flex;
+  background-color: #fbfbfb;
+  margin-top: 1em;
+}
+form p,
 label {
-  background-color: white;
-  font-size: 40px;
+  background-color: #fbfbfb;
 }
 
-input {
+
+.radioStyle input {
   width: 100px;
   height: 50px;
   border: 2px solid #014e60;
   border-radius: 5px;
+  background-color: #fbfbfb;
 }
 
 /* Styling Rolling button */
@@ -58,7 +74,6 @@ input {
   background-color: #014e60;
   color: #f1f1f1;
   cursor: pointer;
-  font-size: 50px;
 }
 
 .button:hover {
