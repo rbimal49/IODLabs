@@ -14,6 +14,10 @@ function rollDice() {
   if (tenRadio.checked) {
     numberSelection = 10;
   }
+  // returns empty dice if nothing is selected
+  if (numberSelection === undefined) {
+    return "";
+  }
 
   //Generates the random number between 0 and numberSelection, rounds to the nearest integer
   return Math.round(Math.random() * numberSelection);
