@@ -1,0 +1,139 @@
+/* ----Start of resetting the whole documents---- */
+/* Resetting to box-sizing model. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Resetting Typo of the document */
+body {
+  line-height: 1.5;
+  font-family: poppins;
+}
+/* Resetting media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Resetting form built in Typo */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoiding text overflow */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* ---- End of resetting the whole documents---- */
+/* Styling Header and Nav */
+header {
+  min-height: 100px;
+  background-color: #046c5e;
+  padding: 1.25rem 0rem;
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0px 1px 5px #024e44;
+}
+
+.header-container {
+  margin: auto;
+  max-width: 1350px;
+  color: #eff1f5;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 1.25rem;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #eff1f5;
+}
+
+/* Styling Landing page */
+
+.landing-page-container {
+  background-color: #046c5e;
+}
+.landing-page {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  max-width: 1350px;
+  margin: auto;
+}
+
+.landing-page div {
+  width: 50%;
+  padding: 0 3rem;
+}
+
+.hero-image {
+  background-image: url(heroimage.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-self: center;
+}
+
+.main {
+  margin: auto;
+  max-width: 1350px;
+}
+
+.media {
+  display: inline-block;
+  min-width: 40%;
+  background-color: #ededed;
+  border: 1px solid red;
+}
+iframe {
+  border: none;
+}
+
+form {
+  text-align: center;
+}
+
+aside {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+footer {
+  background-color: #ededed;
+}
+
+.footer-container {
+  margin: auto;
+  max-width: 1350px;
+}

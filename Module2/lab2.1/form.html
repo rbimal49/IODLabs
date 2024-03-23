@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>Lab2.1 Form</title>
+<meta name="description" content="My first HTML lab work." />
+<meta name="keywords" content="IOD, 2024, Bootcamp, HTML, HTML5>
+    <meta name=" author" content="IOD2024" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- works like <a href="/index.html">Home</a> -->
+            <a href="/index.html">Home</a>
+            <a href="/form.html">Form</a>
+        </nav>
+    </header>
+
+    <main>
+        <form method="POST" action="http://127.0.0.1:5500/form.html">
+            <!-- Added firstname and last name input feild -->
+            <div><label for="firstname">First Name</label>
+                <input type="text">
+            </div>
+            <div><label for="">Last name</label>
+                <input type="text">
+            </div>
+            <!-- Adding Radio button -->
+            <div><input type="radio"> <label value="red">Red</label></div>
+            <div><input type="radio"> <label value="blue">Blue</label></div>
+            <div><input type="radio"> <label value="green">Green</label></div>
+
+            <!-- Added checkbox for selecting type of vehicle-->
+            <div>
+                <input type="checkbox" name="vehicleCar" value="Car">
+                <label for="vehicleCar">Car</label>
+                <input type="checkbox" name="vehicleBike" value="Bike">
+                <label for="vehicleBike">Bike</label>
+                <input type="checkbox" name="vehicleTruck" value="Truck">
+                <label for="vehicleTruck">Truck</label>
+            </div>
+
+            <!-- Added dropdownlist -->
+            <div>
+                <label for="carBrand">Car Brand</label>
+                <select name="carBrand" id="carBrand">
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Tesla">Tesla</option>
+                    <option value="BMW">BMW</option>
+                </select>
+            </div>
+            <button type="submit">Submit form</button>
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>

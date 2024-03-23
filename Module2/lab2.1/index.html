@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab2.1 HTML</title>
+    <meta name="description" content="My first HTML lab work." />
+    <meta name="keywords" content="IOD, 2024, Bootcamp, HTML, HTML5>
+    <meta name=" author" content="IOD2024" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <!-- works like <a href="/index.html">Home</a> -->
+            <a href="/index.html">Home</a>
+            <a href="/form.html">Form</a>
+        </nav>
+    </header>
+    <main>
+        <h1>My HTML learning journey</h1>
+        <!-- Content added in prevous points -->
+        <article>
+            <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+            <!-- Adding 3 divs -->
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+
+            <!-- Adding 3 Spans -->
+            <span>Integer</span>
+            <span>Fload</span>
+            <span>Boolean</span>
+            <!-- Adding P tag -->
+            <p>
+                p represents paragraph without preserving spacing
+            </p>
+            <!-- Adding Pre tag -->
+            <pre>
+                    Text in         a pre element
+                    is displayed in a fixed-width
+                    font, and it preserves
+                    both      spaces and
+                    line breaks
+                    </pre>
+
+            <!-- Adding ul and li tags -->
+            <ul>
+                <li>Queenstown</li>
+                <li>Christchurch</li>
+                <li>Wellington</li>
+                <li>Auckland
+                    <ul>
+                        <li>CBD</li>
+                        <li>Suburb</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Adding ol and li tags -->
+            <ol>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+            </ol>
+        </article>
+        <article>
+            <h2>Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <!-- Colospan added to first th -->
+                        <th colspan="2">First header</th>
+                        <th>Second header</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>First cell - first row</td>
+                        <td>Second cell - first row</td>
+                        <!-- Adding the third cell -->
+                        <td>Second cell - first row</td>
+                    </tr>
+                    <!-- tr tag copied -->
+                    <tr>
+                        <td>Second cell - first row</td>
+                        <td>Second cell - Second row</td>
+                        <!-- Added row to fix the table -->
+                        <td>Scond cell - third row</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </article>
+        <article>
+            <h2>Media</h2>
+            <img src="https://picsum.photos/400/400" alt="random images" height="300px" />
+            <img src="/assets/html_lab_image.jpg" alt="html lab image">
+            <video autoplay height="300px">
+                <source src="/assets/flower.webm" type="video/webm">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            <audio autoplay src="/assets/t-rex-roar.mp3">
+                Your browser does not support the <code>audio</code> element.
+            </audio>
+        </article>
+
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>

@@ -18,9 +18,17 @@ function rollDice() {
   if (numberSelection === undefined) {
     return "";
   }
+  // Test:
+  const diceRoll = Math.floor(Math.random() * numberSelection + 1);
+  if (diceRoll < 1) {
+    throw new Error("Must select number greater than 0");
+  }
+  if (diceRoll > numberSelection) {
+    throw new Error("Must select number less than 10 or test");
+  }
 
   //Generates the random number between 0 and numberSelection, rounds to the nearest integer
-  return Math.round(Math.random() * numberSelection);
+  return diceRoll;
 }
 
 // Function that updates the HTML element with id "cube"
@@ -29,3 +37,5 @@ function updateValue() {
   document.getElementById("cube").innerHTML = rollDice();
   document.getElementById("cube").style.display = "block";
 }
+
+// Unit test started
