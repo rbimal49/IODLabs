@@ -87,7 +87,7 @@ a {
 
 /* 6. Changing direction */
 .flex-container {
-  /*this propert has affected and ovreride the all the flex-container in the html document*/
+  /*this property has affected and ovreride the all the flex-container in the html document*/
   display: flex;
   flex-direction: row; /* default flex direction */
   flex-direction: row-reverse; /*  flex direction row-reverse*/
