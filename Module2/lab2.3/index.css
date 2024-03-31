@@ -1,4 +1,4 @@
-index.css body {
+body {
   font-family: sans-serif;
   font-size: 16px;
 }
@@ -41,3 +41,75 @@ a {
 }
 
 /* Add your answers here, do not modify the above CSS */
+/* 2 Basic Flexbox CSS starts from here */
+.flex-container {
+  display: flex;
+}
+
+.flex-item-1 {
+  flex: 1;
+}
+.flex-item-2 {
+  flex: 2;
+}
+.flex-item-3 {
+  flex: 3;
+}
+.flex-item-4 {
+  flex: 4;
+}
+
+/* 3. Centering with flexbox */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 4. Assigning leftover spacle */
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 5. Wrapping items */
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse; /* reversing the wrap */
+}
+
+.flex-basis-item-50 {
+  flex-basis: 50%;
+  flex-basis: 25%; /* new value to amke all 4 flex items fit on the on line */
+}
+
+/* 6. Changing direction */
+.flex-container {
+  /*this propert has affected and ovreride the all the flex-container in the html document*/
+  display: flex;
+  flex-direction: row; /* default flex direction */
+  flex-direction: row-reverse; /*  flex direction row-reverse*/
+  flex-direction: column; /* flex direction column */
+  flex-direction: column-reverse; /* flex direction column reverse */
+}
+
+/* 7. Flexbox for horizontal navigation */
+.flex-menu {
+  flex-direction: row;
+  justify-content: right;
+  justify-content: center;
+  gap: 5px;
+  list-style-type: none;
+  flex-grow: 1; /* Each item grows to take up equal space */
+}
+
+.fourth-item {
+  order: 5; /* Move the fourth item to the end */
+}
+
+/* adding space in flex-menu items */
+.flex-menu li {
+  padding: 20px;
+}
