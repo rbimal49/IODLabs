@@ -5,7 +5,7 @@ animals.push("Lion", "Elephant");
 animals.unshift("Deer", "Donkey");
 //Sort the values alphabetically
 function sortAlpha() {
-  return animals.sort;
+  return animals.sort();
 }
 
 // sorting the array alphabetical order
