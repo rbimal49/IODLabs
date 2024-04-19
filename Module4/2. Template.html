@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e3f2fd;
+        }
+
+        /* -------------------------------------- Card -------------------------------------- */
+        #card-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 16px;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .card {
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            width: 50%;
+            flex: 0 1 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-weight: 600;
+            font-size: 3em;
+            padding: 0 0 10px 0;
+        }
+
+        .card-description {
+            font-weight: 400;
+            font-size: 2em
+        }
+
+        /* -------------------------------------- Artist portfolio --------------------------------------*/
+        #artist-profile {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 16px;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .artist-card {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 0px 30px 0px 30px;
+            border-radius: 10px;
+            background-color: #a9cbe3;
+        }
+
+        .portfolio-item {
+            padding-bottom: 20px;
+
+        }
+
+        .portfolio-item img {
+            max-width: 300px;
+            height: auto;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!---------------------------------------- Exercise 2 ---------------------------------------->
+    <template id="card-template">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title"></div>
+                <div class="card-text"></div>
+            </div>
+        </div>
+    </template>
+    <div id="card-list"></div>
+
+
+
+    <!---------------------------------------- Exercise 3 Artist ---------------------------------------->
+
+    <div id="artist-profile"></div>
+
+    <script>
+        // -------------------------------------- Excercise-2 cards --------------------------------------
+        // Exercise-2 Modifying addCard function to generated automated card based on data from an arry
+        const data = [{ name: 'bob', age: 23 },
+        { name: 'alice', age: 39 }]
+
+        function addCard(name, age) {
+            // clone the template
+            const template =
+                document.getElementById("card-template")
+                    .content.cloneNode(true);
+            // populate the template with name and the age.
+            template.querySelector('.card-title').innerText = name;
+            template.querySelector('.card-text').innerText =
+                `Age: ${age}`;
+            // include the populated template into the page
+            document.querySelector('#card-list')
+                .appendChild(template);
+        }
+
+        // Iterate each data in the array
+        data.forEach(item => addCard(item.name, item.age));
+
+
+        // -------------------------------------- Exercise-3 the artist's portfolio --------------------------------------
+
+        const artist = [
+            {
+                name: "Van Gogh",
+                portfolio: [
+                    { title: "portrait", url: "https://collectionapi.metmuseum.org/api/collection/v1/iiif/436532/1671316/main-image" },
+                    { title: "sky", url: "https://mymodernmet.com/wp/wp-content/uploads/2020/11/White-house-night-van-goh-worldwide-2.jpg" },
+                ]
+            },
+            // Added second artist
+            {
+                name: "Leonardo Da Vinci",
+                portfolio: [
+                    { title: "house", url: "https://mymodernmet.com/wp/wp-content/uploads/2020/11/White-house-night-van-goh-worldwide-2.jpg" },
+                    { title: "portrait", url: "https://collectionapi.metmuseum.org/api/collection/v1/iiif/436532/1671316/main-image" },
+
+                ]
+            },
+        ];
+
+        // Getting the container element from html docuemnt with id "artist-profile" where the artist cards will be appended
+        const artistProfileContainer = document.getElementById("artist-profile");
+
+        // Iterate each artist in the array
+        artist.forEach(artist => {
+            // Create a div element for the artist card
+            const artistCard = document.createElement("div");
+            artistCard.classList.add("artist-card");
+
+            // Create a h2 element for the artist name and set the text content
+            const artistName = document.createElement("h2");
+            artistName.textContent = artist.name;
+
+            // Append artist name to the artist card
+            artistCard.appendChild(artistName);
+
+            // Iterate each work in the artist portfolio
+            artist.portfolio.forEach(item => {
+                // Create a div element for the portfolio item
+                const portfolioItem = document.createElement("div");
+                portfolioItem.classList.add("portfolio-item");
+
+                // Create a h2 element for the item title and set the text content
+                const itemTitle = document.createElement("h3");
+                itemTitle.textContent = item.title;
+
+                // Create a img element for the portfolio image and set the src and alt attributes
+                const itemImage = document.createElement("img");
+                itemImage.src = item.url;
+                itemImage.alt = item.title;
+
+                // Appedn the item title and item image to the protfolio item
+                portfolioItem.appendChild(itemTitle);
+                portfolioItem.appendChild(itemImage);
+
+                // Append the portfolio item to the artist card
+                artistCard.appendChild(portfolioItem);
+            });
+
+            // Append the artist card to the artist profile container 
+            artistProfileContainer.appendChild(artistCard);
+        });
+    </script>
+</body>
+
+</html>
