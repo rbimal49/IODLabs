@@ -1,0 +1,49 @@
+body {
+  background-color: #f1f1f1;
+  padding-top: 50px;
+}
+
+.card {
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 2rem;
+    height: 200px;
+    object-fit: contain;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #014e60;
+  min-height: 48px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  /* Number of lines to show */
+  text-overflow: ellipsis;
+}
+
+.card-description {
+  color: #434242;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  /* Number of lines to show */
+  text-overflow: ellipsis;
+}
+.card-price {
+  color: #dd0025;
+  font-size: 1rem;
+  font-weight: 600;
+}
