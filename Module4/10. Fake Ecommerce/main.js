@@ -1,12 +1,12 @@
 // Fetching data from Fake Store API
 fetch("https://fakestoreapi.com/products")
-  .then((response) => response.json())
-  .then((data) => {
+  .then(response => response.json())
+  .then(data => {
     // getting the card element from html dcoument with id 'product-list'
     const productList = document.getElementById("product-list");
 
     //Iterate each product in the array
-    data.forEach((product) => {
+    data.forEach(product => {
       //Create bootstrap div element fot the product card
       const card = document.createElement("div");
       //   adding bootstrap responsive class on card
