@@ -16,17 +16,17 @@
 <body>
     <div class="container">
         <h1 class="text-center my-5">Online Store</h1>
-        <div class="mb-5">
-            <label for="categorySelect" class="">Select Category:</label>
-            <select name="" id="categorySelect">
-                <option value="">All Products</option>
-                <option value="">Men's Clothing</option>
-                <option value="">Wen's Clothing</option>
-                <option value="">Jewelery</option>
-                <option value="">Electronics</option>
-
+        <div class="mb-5 category-container">
+            <label for="category-select" class="">Select Category:</label>
+            <select id="category-select" class="form-select">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="jewelery">Jewelery</option>
+                <option value="men's clothing">Men's Clothing</option>
+                <option value="women's clothing">Women's Clothing</option>
             </select>
         </div>
+
         <div class="row" id="product-list"></div>
     </div>
     <script src="main.js"></script>
