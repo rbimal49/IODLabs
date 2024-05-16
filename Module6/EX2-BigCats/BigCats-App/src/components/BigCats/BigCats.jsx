@@ -1,58 +1,59 @@
 import React from "react";
+import SingleCat from "../SingleCat/SingleCat";
+import "./BigCats.css";
 
 const cats = [
   {
     id: "1001",
     name: "Cheetah",
     latinName: "Acinonyx jubatus",
-    Image: "../public/Cheetah.jpg",
+    image: "../public/Cheetah.jpg",
   },
   {
     id: "1002",
     name: "Cougar",
     latinName: "Puma concolor",
-    Image: "../public/Cougar.jpg",
+    image: "../public/Cougar.jpg",
   },
   {
     id: "1003",
     name: "Jaguar",
     latinName: "Panthera onca",
-    Image: "../public/Jaguar.jpg",
+    image: "../public/Jaguar.jpg",
   },
   {
     id: "1004",
     name: "Leopard",
     latinName: "Panthera pardus",
-    Image: "../public/Leopard.jpg",
+    image: "../public/Leopard.jpg",
   },
   {
     id: "1005",
     name: "Lion",
     latinName: "Panthera leo",
-    Image: "../public/Lion.jpg",
+    image: "../public/Lion.jpg",
   },
   {
     id: "1006",
     name: "Snow leopard",
     latinName: "Panthera uncia",
-    Image: "../public/Snow Leopard.jpg",
+    image: "../public/Snow Leopard.jpg",
   },
   {
     id: "1007",
     name: "Tiger",
     latinName: "Panthera tigris",
-    Image: "../public/Tiger.jpg",
+    image: "../public/Tiger.jpg",
   },
 ];
 
-const BigCats = () => {
+function BigCats() {
   return (
-    <div>
+    <div className="big-cats-container">
       <h1>Big Cats</h1>
-      <ul className="big-cats-list">
+      {/* <ul className="big-cats-list">
         {cats.map((cat) => (
           <li key={cat.id}>
-            {/* ID: {cat.id} - <storng>{cat.name}</storng> - {cat.latinName} */}
             <p>
               ID: {cat.id} - Name: {cat.name} - - - - - -Latin Name:{" "}
               {cat.latinName}
@@ -60,9 +61,19 @@ const BigCats = () => {
             <img src={cat.Image} className="image-container" alt="cat.name" />
           </li>
         ))}
+      </ul> */}
+      <ul className="big-cats-list">
+        {cats.map((cat) => (
+          <SingleCat
+            id={cat.id}
+            name={cat.name}
+            latinName={cat.latinName}
+            image={cat.image}
+          />
+        ))}
       </ul>
     </div>
   );
-};
+}
 
 export default BigCats;

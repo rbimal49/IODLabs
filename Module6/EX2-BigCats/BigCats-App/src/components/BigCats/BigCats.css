@@ -1,0 +1,12 @@
+.big-cats-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.big-cats-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
