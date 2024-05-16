@@ -40,3 +40,24 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Big cat css */
+.big-cats-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.big-cats-list-item {
+  margin-bottom: 5px;
+}
+
+.big-cats-list-item strong {
+  color: #333;
+}
+
+.big-cats-list img {
+  width: 500px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 5px;
+}
