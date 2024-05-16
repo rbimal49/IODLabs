@@ -54,3 +54,10 @@
 .big-cats-list-item strong {
   color: #333;
 }
+
+.big-cats-list img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 5px;
+}
