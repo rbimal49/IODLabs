@@ -3,6 +3,7 @@ import SingleCat from "../SingleCat/SingleCat";
 import "./BigCats.css";
 
 function BigCats() {
+  // Assign array to initialCatList variable
   const initialCatList = [
     {
       id: "1001",
@@ -47,7 +48,10 @@ function BigCats() {
       image: "../public/img/Cougar.jpg",
     },
   ];
+
+  // Assign state variable to hold the arry of bigcats
   const [cats, setCats] = useState(initialCatList);
+  // Map the cats state to SingleCat components
   const catList = cats.map((cat) => (
     <SingleCat
       key={cat.id}
@@ -58,27 +62,39 @@ function BigCats() {
     />
   ));
 
+  // Function to shor the cats arry in alphabetical order
   const sortAlphabetically = () => {
     let sortedCats = [...cats];
-    sortedCats.sort();
+    sortedCats.sort((a, b) => (a.name > b.name ? 1 : -1)); // Compare the string to sort
     setCats(sortedCats);
   };
 
+  // Function to shor the cats array in reverse alphabetical order
   const sortReverseAlphabetically = () => {
     let sortedCats = [...cats];
-    sortedCats.reverse();
+    sortedCats.sort((a, b) => (a.name > b.name ? 1 : -1)); // Sort the string before reverse
+    sortedCats.reverse(); // Reverse the alphabetically sorted string
     setCats(sortedCats);
   };
 
-  function filterByPantheraFamily() {}
+  // Function to filter the cats array by Panthera Family.
+  const filterByPantheraFamily = () => {
+    const filteredCats = cats.filter((cat) =>
+      cat.latinName.startsWith("Panthera")
+    );
+    setCats(filteredCats);
+  };
 
+  // Function to reset the initial arrylist
   function resetCatList() {
     setCats(initialCatList);
   }
 
   return (
+    // Bigcats single div wrapper
     <div className="big-cats-container">
       <h1>Big Cats</h1>
+      {/* Grouped Buttons to div wrapper for styling */}
       <div className="button-container">
         <button onClick={sortAlphabetically}>Sort Alphabetically</button>
         <button onClick={sortReverseAlphabetically}>

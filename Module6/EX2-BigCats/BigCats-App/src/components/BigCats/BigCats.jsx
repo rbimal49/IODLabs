@@ -3,6 +3,7 @@ import SingleCat from "../SingleCat/SingleCat";
 import "./BigCats.css";
 
 function BigCats() {
+  // Assign array to cats variable
   const cats = [
     {
       id: "1001",
@@ -49,6 +50,7 @@ function BigCats() {
   ];
 
   const catList = cats.map((cat) => (
+    // Map the cats state to SingleCat components
     <SingleCat
       key={cat.id}
       id={cat.id}
@@ -59,8 +61,10 @@ function BigCats() {
   ));
 
   return (
+    // Bigcats single div wrapper
     <div className="big-cats-container">
       <h1>Big Cats</h1>
+      {/* Render the list of SingleCat component */}
       <ul className="big-cats-list ">{catList}</ul>
     </div>
   );
