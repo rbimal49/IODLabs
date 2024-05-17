@@ -1,0 +1,31 @@
+.big-cats-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.big-cats-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-container {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button-container button {
+  width: 250px;
+  margin: 0 20px 20px 20px;
+  border: 1px solid #d2caca;
+}
+
+.button-container button:hover {
+  border: none;
+  background-color: rgb(234, 154, 5);
+}
