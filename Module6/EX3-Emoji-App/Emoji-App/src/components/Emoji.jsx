@@ -5,7 +5,11 @@ function MoodChanger() {
   const [mood, setMood] = useState("😎");
 
   const NewMood = () => {
-    setMood("😜");
+    if (mood === "😎") {
+      setMood("😜");
+    } else {
+      setMood("😎");
+    }
   };
   return (
     <div>
