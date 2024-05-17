@@ -51,7 +51,7 @@ function BigCats() {
   return (
     <div className="big-cats-container">
       <h1>Big Cats</h1>
-      {/* ***previous Code
+      {/* ***previous Code***
       <ul className="big-cats-list">
         {cats.map((cat) => (
           <li key={cat.id}>

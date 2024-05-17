@@ -1,20 +1,19 @@
 .single-cat-item {
-    margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
-    background-color: #f9f9f9;
-    padding-bottom: 10px;
-  }
-  
-  .single-cat-image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px 5px 0px 0px;
-  }
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding-bottom: 10px;
+}
 
-  .single-cat-item h2, p{
-    margin: 0;
-  }
-  
+.single-cat-image {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.single-cat-item h2,
+p {
+  margin: 0;
+}
