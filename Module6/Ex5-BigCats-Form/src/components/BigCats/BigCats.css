@@ -1,0 +1,43 @@
+.big-cats-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.big-cats-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-container {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button-container button {
+  width: 250px;
+  margin: 0 20px 20px 20px;
+  border: 1px solid #d2caca;
+}
+
+.button-container div:hover {
+  border: none;
+  background-color: #ea9a05;
+}
+
+.bigcat-card {
+  position: relative;
+}
+
+.delete-button-container {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  border: 1px solid #d2caca;
+  border-radius: 5px;
+}
