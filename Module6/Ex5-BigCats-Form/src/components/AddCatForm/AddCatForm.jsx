@@ -21,7 +21,7 @@ function AddCatForm({ onAddBigCat }) {
 
   const addBigCatImage = (e) => {
     console.log(e.target.files[0].name);
-    const imageHolder = `../public/img/${e.target.files[0].name}`;
+    const imageHolder = `../img/${e.target.files[0].name}`;
     setImage(imageHolder);
   };
 
