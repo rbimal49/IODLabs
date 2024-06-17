@@ -1,0 +1,152 @@
+[
+  {
+    "id": "1",
+    "name": "Cheetah",
+    "latinName": "Acinonyx jubatus",
+    "image": "../img/Cheetah.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Tiger",
+    "latinName": "Panthera tigris",
+    "image": "../img/Tiger.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Lion",
+    "latinName": "Panthera leo",
+    "image": "../img/Lion.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Leopard",
+    "latinName": "Panthera pardus",
+    "image": "../img/Leopard.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Snow leopard",
+    "latinName": "Panthera uncia",
+    "image": "../img/Snow Leopard.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Jaguar",
+    "latinName": "Panthera onca",
+    "image": "../img/Jaguar.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Cougar",
+    "latinName": "Puma concolor",
+    "image": "../img/Cougar.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Sunda Clouded",
+    "latinName": "Neofelis diardi",
+    "image": "../img/Sundacloudedleopard.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Caracal",
+    "latinName": "Caracal caracal",
+    "image": "../img/Caracal.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Ocelot",
+    "latinName": "Leopardus pardalis",
+    "image": "../img/Ocelot.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Serval",
+    "latinName": "Leptailurus serval",
+    "image": "../img/Serval.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Fishing Cat",
+    "latinName": "Prionailurus viverrinus",
+    "image": "../img/Fishing Cat.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Pallas's Cat",
+    "latinName": "Otocolobus manul",
+    "image": "../img/PallassCat.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Sand Cat",
+    "latinName": "Felis margarita",
+    "image": "../img/SandCat.jpg"
+  },
+  {
+    "id": "15",
+    "name": "Black-footed Cat",
+    "latinName": "Felis nigripes",
+    "image": "../img/BlackFootedCat.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Rusty-spotted Cat",
+    "latinName": "Prionailurus rubiginosus",
+    "image": "../img/RustyspottedCat.jpg"
+  },
+  {
+    "id": "17",
+    "name": "Leopard Cat",
+    "latinName": "Prionailurus bengalensis",
+    "image": "../img/LeopardCat.jpg"
+  },
+  {
+    "id": "18",
+    "name": "Flat-headed Cat",
+    "latinName": "Prionailurus planiceps",
+    "image": "../img/FlatheadedCat.jpg"
+  },
+  {
+    "id": "19",
+    "name": "Andean Mountain Cat",
+    "latinName": "Leopardus jacobita",
+    "image": "../img/AndeanMountainCat.jpg"
+  },
+  {
+    "id": "20",
+    "name": "Iberian Lynx",
+    "latinName": "Lynx pardinus",
+    "image": "../img/IberianLynx.jpg"
+  },
+  {
+    "id": "21",
+    "name": "Eurasian Lynx",
+    "latinName": "Lynx lynx",
+    "image": "../img/EurasianLynx.jpg"
+  },
+  {
+    "id": "22",
+    "name": "Bobcat",
+    "latinName": "Lynx rufus",
+    "image": "../img/Bobcat.jpg"
+  },
+  {
+    "id": "23",
+    "name": "Canadian Lynx",
+    "latinName": "Lynx canadensis",
+    "image": "../img/CanadianLynx.jpg"
+  },
+  {
+    "id": "24",
+    "name": "African Golden Cat",
+    "latinName": "Caracal aurata",
+    "image": "../img/AfricanGoldenCat.jpg"
+  },
+  {
+    "id": "25",
+    "name": "Jungle Cat",
+    "latinName": "Felis chaus",
+    "image": "../img/JungleCat.jpg"
+  }
+]
